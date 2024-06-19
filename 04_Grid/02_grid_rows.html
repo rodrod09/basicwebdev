@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Grid Rows</title>
     <style>
       .item {
@@ -15,11 +18,12 @@
       }
       .grid {
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr 4fr;
+        grid-template-rows: 1fr 2fr 1fr 2fr;
         /* Set implicit rows */
-        grid-auto-rows: 3fr;
+        grid-auto-rows: 1fr;
 
-        grid-template-columns: repeat(2, 1fr);
+        /* Columns */
+        grid-template-columns: repeat(3, 1fr);
       }
     </style>
   </head>
@@ -34,6 +38,8 @@
       <div class="item">Item 7</div>
       <div class="item">Item 8</div>
       <div class="item">Item 9</div>
+      <div class="item">Item 10</div>
+      <div class="item">Item 10</div>
       <div class="item">Item 10</div>
     </div>
   </body>
